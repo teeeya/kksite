@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<title> test</title>
+		
+		
+			<style type="text/css">
+			</style>
+
+
+
+		<!-- load the jquery library file -->
+		<script type="text/javascript" src="jquery-1.4.2.js"></script>
+		
+		<!-- jquery code -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#bottom").click(function(){//if user clicks on 'top' div, fade out 'middle' div
+					$("#login").fadeOut('slow', function(){});
+				})
+			});
+		</script>
+		
+		
+	</head>
+
+
+
+
+
+
+	<body>
+	
+		<!-- left column
+		<div style="width:200px; height:200px; 
+			border:1px dotted black; background-color:pink; float:left;" id="top">( top layer )
+			CLICK TO DELETE THE BLUE PART
+		</div>-->
+	 	
+		<!-- right columm -->
+		<div style="width:750px;">
+				<div style="width:250px; height:200px;  
+					border:1px dotted black; background-color:blue;float: right; margin-left:210px;" id="middle">
+					<div style="width:250; height:50; background-color:pink;"id="login" >
+					LOGIN LOGIN LOGIN!!!
+					
+					</div>
+					
+					THIS IS THE RIGHT COLUMN BEEF CONTENT
+				</div>
+	
+		<!-- content column -->
+				<div style="width:500px; height:200px;border:1px dotted black; background-color:red;" id="bottom">
+					THIS IS MIDDLE CONTENT
+				</div>
+		</div>
+		
+		
+	</body>
+	
+	
+	
+</html>
